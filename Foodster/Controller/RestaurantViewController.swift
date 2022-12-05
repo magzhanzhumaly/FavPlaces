@@ -105,36 +105,11 @@ class RestaurantViewController: UIViewController {
     }
     
     
-    // MARK: - UITableView Diffable Data Source
-
-    func configureDataSource() -> RestaurantDiffableDataSource {
-     
+    func configureDataSource() -> UITableViewDiffableDataSource<Section, Restaurant> {
+        
         let cellIdentifier = "datacell"
 //        let cellIdentifier = "favoritecell"
-     
-        /*old
-        let dataSource = UITableViewDiffableDataSource<Section, String>(
-            tableView: tableView,
-            cellProvider: {  tableView, indexPath, restaurantName in
-                let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! RestaurantTableViewCell
 
-//                cell.textLabel?.text = restaurantName
-//                cell.imageView?.image = UIImage(named: restaurantName)
-     
-                cell.nameLabel.text = restaurantName
-                cell.locationLabel.text = self.restaurantLocations[indexPath.row]
-                cell.typeLabel.text = self.restaurantTypes[indexPath.row]
-                cell.thumbnailImageView.image = UIImage(named: self.restaurantImages[indexPath.row])
-                
-
-
-                // to get rid of the repeating ticks
-                cell.accessoryType = self.restaurantIsFavorites[indexPath.row] ? .checkmark : .none
-
-                return cell
-            }
-        ) */
-        
         let dataSource = RestaurantDiffableDataSource(
             tableView: tableView,
             cellProvider: {  tableView, indexPath, restaurant in
@@ -166,8 +141,6 @@ class RestaurantViewController: UIViewController {
     }
     
     
-    
-    // MARK: - IBActions
     @IBAction func unwindToHome(segue: UIStoryboardSegue) {
         dismiss(animated: true, completion: nil)
     }
@@ -175,22 +148,23 @@ class RestaurantViewController: UIViewController {
     
     
     // MARK: - Core Data
+
     func fetchRestaurantData(searchText: String = "") {
-        let fetchRequest: NSFetchRequest = Restaurant.fetchRequest()
-     
+        // Fetch data from data store
+        let fetchRequest: NSFetchRequest<Restaurant> = Restaurant.fetchRequest()
+        
         if !searchText.isEmpty {
             fetchRequest.predicate = NSPredicate(format: "name CONTAINS[c] %@ OR location CONTAINS[c] %@", searchText, searchText)
         }
-     
+
         let sortDescriptor = NSSortDescriptor(key: "name", ascending: true)
-        
         fetchRequest.sortDescriptors = [sortDescriptor]
-     
+        
         if let appDelegate = (UIApplication.shared.delegate as? AppDelegate) {
             let context = appDelegate.persistentContainer.viewContext
             fetchResultController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
             fetchResultController.delegate = self
-     
+
             do {
                 try fetchResultController.performFetch()
                 updateSnapshot(animatingChange: searchText.isEmpty ? false : true)
@@ -199,18 +173,20 @@ class RestaurantViewController: UIViewController {
             }
         }
     }
+    
     func updateSnapshot(animatingChange: Bool = false) {
-     
+        
         if let fetchedObjects = fetchResultController.fetchedObjects {
             restaurants = fetchedObjects
         }
-     
+        
+        // Create a snapshot and populate the data
         var snapshot = NSDiffableDataSourceSnapshot<Section, Restaurant>()
         snapshot.appendSections([.all])
         snapshot.appendItems(restaurants, toSection: .all)
-     
+        
         dataSource.apply(snapshot, animatingDifferences: animatingChange)
-     
+      
         tableView.backgroundView?.isHidden = restaurants.count == 0 ? false : true
     }
 
@@ -475,58 +451,19 @@ extension RestaurantViewController: UITableViewDelegate {
 }
 
 extension RestaurantViewController: NSFetchedResultsControllerDelegate {
-    func controllerDidChangeContent(_ controller: NSFetchedResultsController<Restaurant>) {
+    
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         updateSnapshot()
     }
 }
 
 extension RestaurantViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
- 
+        
         guard let searchText = searchController.searchBar.text else {
             return
         }
- 
+    
         fetchRestaurantData(searchText: searchText)
     }
 }
-
-    /*
-    func fetchRestaurantData() {
-        let fetchRequest: NSFetchRequest<Restaurant> = Restaurant.fetchRequest()
-        let sortDescriptor = NSSortDescriptor(key: "name", ascending: true)
-        fetchRequest.sortDescriptors = [sortDescriptor]
-     
-        if let appDelegate = (UIApplication.shared.delegate as? AppDelegate) {
-            let context = appDelegate.persistentContainer.viewContext
-            fetchResultController = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
-            fetchResultController.delegate = self
-     
-            do {
-                try fetchResultController.performFetch()
-                updateSnapshot()
-            } catch {
-                print(error)
-            }
-        }
-    }*/
-    
-        
-
-/*
-    func updateSnapshot(animatingChange: Bool = false) {
-     
-        if let fetchedObjects = fetchResultController.fetchedObjects {
-            restaurants = fetchedObjects
-        }
-     
-        var snapshot = NSDiffableDataSourceSnapshot<Section, Restaurant>()
-        snapshot.appendSections([.all])
-        snapshot.appendItems(restaurants, toSection: .all)
-     
-        dataSource.apply(snapshot, animatingDifferences: animatingChange)
-     
-        tableView.backgroundView?.isHidden = restaurants.count == 0 ? false : true
-    }*/
-
-
