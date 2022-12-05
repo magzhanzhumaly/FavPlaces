@@ -2,6 +2,17 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>MKDirectionsApplicationSupportedModes</key>
+	<array/>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Nunito-Regular.ttf</string>
+		<string>Nunito-Bold.ttf</string>
+	</array>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>You need to grant the app permission to use your photo library, to use photos</string>
+	<key>NSCameraUsageDescription</key>
+	<string>You need to grant the app permission to use your camera, to make photos</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>
