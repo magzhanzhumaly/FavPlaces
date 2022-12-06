@@ -13,6 +13,9 @@
 		56014A79293405F900C94282 /* RestaurantDetailHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56014A78293405F900C94282 /* RestaurantDetailHeaderView.swift */; };
 		56014A7B293419AC00C94282 /* RestaurantDetailTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56014A7A293419AC00C94282 /* RestaurantDetailTextCell.swift */; };
 		56014A7D29341B6B00C94282 /* RestaurantDetailTwoColumnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56014A7C29341B6B00C94282 /* RestaurantDetailTwoColumnCell.swift */; };
+		5636D28A293F8BC600907F90 /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5636D289293F8BC600907F90 /* WalkthroughContentViewController.swift */; };
+		5636D28C293F8D5700907F90 /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5636D28B293F8D5700907F90 /* WalkthroughPageViewController.swift */; };
+		5636D28E293F8F8600907F90 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5636D28D293F8F8600907F90 /* WalkthroughViewController.swift */; };
 		56546E36293907BB00A33303 /* Foodster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56546E34293907BB00A33303 /* Foodster.xcdatamodeld */; };
 		5663A904292FBB1D001437D8 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5663A903292FBB1D001437D8 /* RestaurantViewController.swift */; };
 		5663A906292FBB40001437D8 /* Restaraunt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5663A905292FBB40001437D8 /* Restaraunt.swift */; };
@@ -61,6 +64,9 @@
 		56014A78293405F900C94282 /* RestaurantDetailHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailHeaderView.swift; sourceTree = "<group>"; };
 		56014A7A293419AC00C94282 /* RestaurantDetailTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailTextCell.swift; sourceTree = "<group>"; };
 		56014A7C29341B6B00C94282 /* RestaurantDetailTwoColumnCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailTwoColumnCell.swift; sourceTree = "<group>"; };
+		5636D289293F8BC600907F90 /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
+		5636D28B293F8D5700907F90 /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
+		5636D28D293F8F8600907F90 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
 		56546E35293907BB00A33303 /* Foodster.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Foodster.xcdatamodel; sourceTree = "<group>"; };
 		5663A903292FBB1D001437D8 /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		5663A905292FBB40001437D8 /* Restaraunt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaraunt.swift; sourceTree = "<group>"; };
@@ -164,6 +170,9 @@
 				569250A72935786000949B85 /* MapViewController.swift */,
 				567ED596293643DD008012D9 /* ReviewViewController.swift */,
 				567ED59A2936BA90008012D9 /* NewRestaurantController.swift */,
+				5636D289293F8BC600907F90 /* WalkthroughContentViewController.swift */,
+				5636D28B293F8D5700907F90 /* WalkthroughPageViewController.swift */,
+				5636D28D293F8F8600907F90 /* WalkthroughViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -377,8 +386,10 @@
 				5663A906292FBB40001437D8 /* Restaraunt.swift in Sources */,
 				567ED5992936A742008012D9 /* RoundedTextField.swift in Sources */,
 				569250A029356B7F00949B85 /* NavigationController.swift in Sources */,
+				5636D28A293F8BC600907F90 /* WalkthroughContentViewController.swift in Sources */,
 				56014A7B293419AC00C94282 /* RestaurantDetailTextCell.swift in Sources */,
 				56BB12C7292A8CF100D78051 /* RestaurantTableViewCell.swift in Sources */,
+				5636D28C293F8D5700907F90 /* WalkthroughPageViewController.swift in Sources */,
 				5663A904292FBB1D001437D8 /* RestaurantViewController.swift in Sources */,
 				5692509C293568F800949B85 /* UIColor+Ext.swift in Sources */,
 				567ED59B2936BA90008012D9 /* NewRestaurantController.swift in Sources */,
@@ -393,6 +404,7 @@
 				56014A79293405F900C94282 /* RestaurantDetailHeaderView.swift in Sources */,
 				56BB12962926B71C00D78051 /* SceneDelegate.swift in Sources */,
 				569250A82935786000949B85 /* MapViewController.swift in Sources */,
+				5636D28E293F8F8600907F90 /* WalkthroughViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
