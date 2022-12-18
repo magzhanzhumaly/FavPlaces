@@ -16,6 +16,12 @@
 		5636D28A293F8BC600907F90 /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5636D289293F8BC600907F90 /* WalkthroughContentViewController.swift */; };
 		5636D28C293F8D5700907F90 /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5636D28B293F8D5700907F90 /* WalkthroughPageViewController.swift */; };
 		5636D28E293F8F8600907F90 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5636D28D293F8F8600907F90 /* WalkthroughViewController.swift */; };
+		5645E04E2942400000E40950 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5645E04D2942400000E40950 /* AboutTableViewController.swift */; };
+		5645E050294243AB00E40950 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5645E04F294243AB00E40950 /* Discover.storyboard */; };
+		5645E053294243BA00E40950 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5645E051294243BA00E40950 /* About.storyboard */; };
+		5645E0552942483500E40950 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5645E0542942483500E40950 /* WebViewController.swift */; };
+		5645E05B29427E5700E40950 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5645E05929427E5700E40950 /* Localizable.strings */; };
+		5645E05C294280BF00E40950 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5645E05E294280BF00E40950 /* Onboarding.storyboard */; };
 		56546E36293907BB00A33303 /* Foodster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56546E34293907BB00A33303 /* Foodster.xcdatamodeld */; };
 		5663A904292FBB1D001437D8 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5663A903292FBB1D001437D8 /* RestaurantViewController.swift */; };
 		5663A906292FBB40001437D8 /* Restaraunt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5663A905292FBB40001437D8 /* Restaraunt.swift */; };
@@ -37,7 +43,6 @@
 		56BB12B52926B71D00D78051 /* FoodsterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BB12B42926B71D00D78051 /* FoodsterUITests.swift */; };
 		56BB12B72926B71D00D78051 /* FoodsterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BB12B62926B71D00D78051 /* FoodsterUITestsLaunchTests.swift */; };
 		56BB12C7292A8CF100D78051 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BB12C6292A8CF100D78051 /* RestaurantTableViewCell.swift */; };
-		56CD6AC0293E975C00F6EF3B /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56CD6ABF293E975C00F6EF3B /* Onboarding.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +72,17 @@
 		5636D289293F8BC600907F90 /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
 		5636D28B293F8D5700907F90 /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
 		5636D28D293F8F8600907F90 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
+		5645E04D2942400000E40950 /* AboutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
+		5645E04F294243AB00E40950 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
+		5645E052294243BA00E40950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Foodster/Storyboard/Base.lproj/About.storyboard; sourceTree = "<group>"; };
+		5645E0542942483500E40950 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		5645E05629427C7200E40950 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = Foodster/Storyboard/ar.lproj/About.strings; sourceTree = "<group>"; };
+		5645E05729427C7200E40950 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		5645E05829427C7200E40950 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Main.strings; sourceTree = "<group>"; };
+		5645E05A29427E5700E40950 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		5645E05D294280BF00E40950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Onboarding.storyboard; sourceTree = "<group>"; };
+		5645E062294280C700E40950 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Onboarding.strings; sourceTree = "<group>"; };
+		5645E0642942845100E40950 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		56546E35293907BB00A33303 /* Foodster.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Foodster.xcdatamodel; sourceTree = "<group>"; };
 		5663A903292FBB1D001437D8 /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		5663A905292FBB40001437D8 /* Restaraunt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaraunt.swift; sourceTree = "<group>"; };
@@ -92,7 +108,6 @@
 		56BB12B42926B71D00D78051 /* FoodsterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsterUITests.swift; sourceTree = "<group>"; };
 		56BB12B62926B71D00D78051 /* FoodsterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsterUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		56BB12C6292A8CF100D78051 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
-		56CD6ABF293E975C00F6EF3B /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,9 +138,11 @@
 		56014A712933F05800C94282 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				56BB12992926B71C00D78051 /* Main.storyboard */,
+				5645E051294243BA00E40950 /* About.storyboard */,
+				5645E04F294243AB00E40950 /* Discover.storyboard */,
 				56BB129E2926B71D00D78051 /* LaunchScreen.storyboard */,
-				56CD6ABF293E975C00F6EF3B /* Onboarding.storyboard */,
+				56BB12992926B71C00D78051 /* Main.storyboard */,
+				5645E05E294280BF00E40950 /* Onboarding.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -173,6 +190,8 @@
 				5636D289293F8BC600907F90 /* WalkthroughContentViewController.swift */,
 				5636D28B293F8D5700907F90 /* WalkthroughPageViewController.swift */,
 				5636D28D293F8F8600907F90 /* WalkthroughViewController.swift */,
+				5645E04D2942400000E40950 /* AboutTableViewController.swift */,
+				5645E0542942483500E40950 /* WebViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -219,6 +238,7 @@
 				56BB129C2926B71D00D78051 /* Assets.xcassets */,
 				56546E34293907BB00A33303 /* Foodster.xcdatamodeld */,
 				56BB12A12926B71D00D78051 /* Info.plist */,
+				5645E05929427E5700E40950 /* Localizable.strings */,
 			);
 			path = Foodster;
 			sourceTree = "<group>";
@@ -335,6 +355,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 56BB12872926B71C00D78051;
 			productRefGroup = 56BB12912926B71C00D78051 /* Products */;
@@ -355,9 +376,12 @@
 			files = (
 				56014A772934019E00C94282 /* Nunito-Regular.ttf in Resources */,
 				56BB12A02926B71D00D78051 /* LaunchScreen.storyboard in Resources */,
+				5645E053294243BA00E40950 /* About.storyboard in Resources */,
 				56BB129D2926B71D00D78051 /* Assets.xcassets in Resources */,
-				56CD6AC0293E975C00F6EF3B /* Onboarding.storyboard in Resources */,
+				5645E05B29427E5700E40950 /* Localizable.strings in Resources */,
+				5645E05C294280BF00E40950 /* Onboarding.storyboard in Resources */,
 				56014A762934019E00C94282 /* Nunito-Bold.ttf in Resources */,
+				5645E050294243AB00E40950 /* Discover.storyboard in Resources */,
 				56BB129B2926B71C00D78051 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,11 +414,13 @@
 				56014A7B293419AC00C94282 /* RestaurantDetailTextCell.swift in Sources */,
 				56BB12C7292A8CF100D78051 /* RestaurantTableViewCell.swift in Sources */,
 				5636D28C293F8D5700907F90 /* WalkthroughPageViewController.swift in Sources */,
+				5645E0552942483500E40950 /* WebViewController.swift in Sources */,
 				5663A904292FBB1D001437D8 /* RestaurantViewController.swift in Sources */,
 				5692509C293568F800949B85 /* UIColor+Ext.swift in Sources */,
 				567ED59B2936BA90008012D9 /* NewRestaurantController.swift in Sources */,
 				56546E36293907BB00A33303 /* Foodster.xcdatamodeld in Sources */,
 				567ED597293643DD008012D9 /* ReviewViewController.swift in Sources */,
+				5645E04E2942400000E40950 /* AboutTableViewController.swift in Sources */,
 				56014A7D29341B6B00C94282 /* RestaurantDetailTwoColumnCell.swift in Sources */,
 				56BB12942926B71C00D78051 /* AppDelegate.swift in Sources */,
 				569250A2293570B400949B85 /* RestaurantDetailMapCell.swift in Sources */,
@@ -441,10 +467,38 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		5645E051294243BA00E40950 /* About.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5645E052294243BA00E40950 /* Base */,
+				5645E05629427C7200E40950 /* ar */,
+			);
+			name = About.storyboard;
+			sourceTree = "<group>";
+		};
+		5645E05929427E5700E40950 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5645E05A29427E5700E40950 /* ar */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		5645E05E294280BF00E40950 /* Onboarding.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5645E05D294280BF00E40950 /* Base */,
+				5645E062294280C700E40950 /* ar */,
+			);
+			name = Onboarding.storyboard;
+			sourceTree = "<group>";
+		};
 		56BB12992926B71C00D78051 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				56BB129A2926B71C00D78051 /* Base */,
+				5645E05829427C7200E40950 /* ar */,
+				5645E0642942845100E40950 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -453,6 +507,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				56BB129F2926B71D00D78051 /* Base */,
+				5645E05729427C7200E40950 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -464,6 +519,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -524,6 +580,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";

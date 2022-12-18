@@ -1,0 +1,6 @@
+/* Bundle name */
+"CFBundleName" = "Foodster";
+/* Privacy - Camera Usage Description */
+"NSCameraUsageDescription" = "You need to grant the app permission to use your camera, to make photos";
+/* Privacy - Photo Library Usage Description */
+"NSPhotoLibraryUsageDescription" = "You need to grant the app permission to use your photo library, to use photos";

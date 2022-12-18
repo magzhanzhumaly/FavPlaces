@@ -1,0 +1,18 @@
+/* Class = "UIButton"; configuration.title = "Skip"; ObjectID = "aZ9-it-WAh"; */
+"aZ9-it-WAh.configuration.title" = "يتخطى";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "aZ9-it-WAh"; */
+"aZ9-it-WAh.normalTitle" = "زر";
+
+/* Class = "UILabel"; text = "Subheading"; ObjectID = "dqg-pk-ocU"; */
+"dqg-pk-ocU.text" = "العنوان الفرعي";
+
+/* Class = "UIButton"; configuration.title = "NEXT"; ObjectID = "kGR-CY-Jzt"; */
+"kGR-CY-Jzt.configuration.title" = "التالي";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "kGR-CY-Jzt"; */
+"kGR-CY-Jzt.normalTitle" = "زر";
+
+/* Class = "UILabel"; text = "HEADING"; ObjectID = "ZLT-rY-9ab"; */
+"ZLT-rY-9ab.text" = "عنوان";
+

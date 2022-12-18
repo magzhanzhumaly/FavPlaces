@@ -19,7 +19,7 @@ class NewRestaurantController: UITableViewController {
             nameTextField.delegate = self
         }
     }
-     
+    
     @IBOutlet var typeTextField: RoundedTextField! {
         didSet {
             typeTextField.tag = 2
@@ -107,9 +107,9 @@ class NewRestaurantController: UITableViewController {
 
         } else {
             
-            let saveNotFullController = UIAlertController(title: "Please fill in all the information", message: nil, preferredStyle: .alert)
+            let saveNotFullController = UIAlertController(title: String(localized: "Please fill in all the information"), message: nil, preferredStyle: .alert)
 
-            let dismissAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+            let dismissAction = UIAlertAction(title: "OK", style: .cancel, handler: nil)
 //            { (action) in
 //                if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
 //                    let imagePicker = UIImagePickerController()
@@ -145,9 +145,9 @@ class NewRestaurantController: UITableViewController {
         
         if indexPath.row == 0 {
      
-            let photoSourceRequestController = UIAlertController(title: "", message: "Choose your photo source", preferredStyle: .actionSheet)
+            let photoSourceRequestController = UIAlertController(title: "", message: String(localized: "Choose your photo source"), preferredStyle: .actionSheet)
      
-            let cameraAction = UIAlertAction(title: "Camera", style: .default, handler: { (action) in
+            let cameraAction = UIAlertAction(title: String(localized: "Camera"), style: .default, handler: { (action) in
                 if UIImagePickerController.isSourceTypeAvailable(.camera) {
                     let imagePicker = UIImagePickerController()
                     imagePicker.delegate = self
@@ -159,7 +159,7 @@ class NewRestaurantController: UITableViewController {
                 }
             })  
      
-            let photoLibraryAction = UIAlertAction(title: "Photo library", style: .default, handler: { (action) in
+            let photoLibraryAction = UIAlertAction(title: String(localized: "Photo library"), style: .default, handler: { (action) in
                 if UIImagePickerController.isSourceTypeAvailable(.photoLibrary) {
                     let imagePicker = UIImagePickerController()
                     imagePicker.delegate = self

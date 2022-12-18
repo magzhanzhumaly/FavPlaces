@@ -1,0 +1,129 @@
+/* Class = "UIButton"; configuration.title = "Okay"; ObjectID = "2MX-mX-orf"; */
+"2MX-mX-orf.configuration.title" = "موافق";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "2MX-mX-orf"; */
+"2MX-mX-orf.normalTitle" = "زر";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "02y-PM-gMu"; */
+"02y-PM-gMu.title" = "العنصر";
+
+/* Class = "UIButton"; configuration.title = "Terrible"; ObjectID = "2zK-HB-xxH"; */
+"2zK-HB-xxH.configuration.title" = "رهيب";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "2zK-HB-xxH"; */
+"2zK-HB-xxH.normalTitle" = "زر";
+
+/* Class = "UILabel"; text = "Phone Number"; ObjectID = "4X6-uw-C2h"; */
+"4X6-uw-C2h.text" = "رقم الهاتف";
+
+/* Class = "UINavigationItem"; title = "Title"; ObjectID = "5MI-i9-eUh"; */
+"5MI-i9-eUh.title" = "عنوان";
+
+/* Class = "UILabel"; text = "Location"; ObjectID = "9V8-Y5-m53"; */
+"9V8-Y5-m53.text" = "موقع";
+
+/* Class = "UIBarButtonItem"; title = "Save"; ObjectID = "29w-9t-1qP"; */
+"29w-9t-1qP.title" = "يحفظ";
+
+/* Class = "UILabel"; text = "Type"; ObjectID = "BYR-AY-eXT"; */
+"BYR-AY-eXT.text" = "يكتب";
+
+/* Class = "UILabel"; text = "Type"; ObjectID = "ByT-ze-5pn"; */
+"ByT-ze-5pn.text" = "يكتب";
+
+/* Class = "UITextView"; text = "A great restaurant to try out"; ObjectID = "cJJ-Ni-llj"; */
+"cJJ-Ni-llj.text" = "مطعم رائع للتجربة";
+
+/* Class = "UITextField"; placeholder = "Fill in the restaurant name"; ObjectID = "cJX-No-Pa5"; */
+"cJX-No-Pa5.placeholder" = "اكتب اسم المطعم";
+
+/* Class = "UINavigationItem"; title = "Foodster"; ObjectID = "Dkg-Je-CbI"; */
+"Dkg-Je-CbI.title" = "Foodster";
+
+/* Class = "UITextField"; placeholder = "Fill in the restaurant name"; ObjectID = "dnd-gM-C2z"; */
+"dnd-gM-C2z.placeholder" = "اكتب اسم المطعم";
+
+/* Class = "UILabel"; text = "Location"; ObjectID = "dq3-mQ-BGB"; */
+"dq3-mQ-BGB.text" = "Location";
+
+/* Class = "UILabel"; text = "ADDRESS"; ObjectID = "F18-aV-BUA"; */
+"F18-aV-BUA.text" = "تبوك";
+
+/* Class = "UITabBarItem"; title = "Favorites"; ObjectID = "FqZ-c7-6Kg"; */
+"FqZ-c7-6Kg.title" = "المفضلة";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "g8n-3r-Cf8"; */
+"g8n-3r-Cf8.text" = "وصف";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "gHP-NT-H69"; */
+"gHP-NT-H69.normalTitle" = "زر";
+
+/* Class = "UILabel"; text = "Description"; ObjectID = "gNS-Px-QOe"; */
+"gNS-Px-QOe.text" = "وصف";
+
+/* Class = "UITextField"; placeholder = "Fill in the restaurant name"; ObjectID = "GqM-J6-3so"; */
+"GqM-J6-3so.placeholder" = "اكتب اسم المطعم";
+
+/* Class = "UIButton"; configuration.title = "Good"; ObjectID = "hCh-HJ-2YZ"; */
+"hCh-HJ-2YZ.configuration.title" = "جيد";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "hCh-HJ-2YZ"; */
+"hCh-HJ-2YZ.normalTitle" = "زر";
+
+/* Class = "UINavigationItem"; title = "New Restaurant"; ObjectID = "hFs-Zq-e7d"; */
+"hFs-Zq-e7d.title" = "مطعم جديد";
+
+/* Class = "UIButton"; configuration.title = "Rate it"; ObjectID = "N0h-5x-6eQ"; */
+"N0h-5x-6eQ.configuration.title" = "قيمه";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "N0h-5x-6eQ"; */
+"N0h-5x-6eQ.normalTitle" = "زر";
+
+/* Class = "UIButton"; configuration.title = "Bad"; ObjectID = "nNL-4v-mfV"; */
+"nNL-4v-mfV.configuration.title" = "سيئ";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "nNL-4v-mfV"; */
+"nNL-4v-mfV.normalTitle" = "زر";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "rSR-BM-w1m"; */
+"rSR-BM-w1m.text" = "اسم";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "sRY-q6-l88"; */
+"sRY-q6-l88.text" = "اسم";
+
+/* Class = "UIButton"; configuration.title = "Awesome"; ObjectID = "Stj-xF-n4q"; */
+"Stj-xF-n4q.configuration.title" = "رائع";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Stj-xF-n4q"; */
+"Stj-xF-n4q.normalTitle" = "زر";
+
+/* Class = "UILabel"; text = "Full Address"; ObjectID = "TF5-B5-kDt"; */
+"TF5-B5-kDt.text" = "العنوان الكاملالعنوان الكامل";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "Tpq-JB-KOl"; */
+"Tpq-JB-KOl.text" = "اسم";
+
+/* Class = "UILabel"; text = "Address"; ObjectID = "V5P-Ug-r7b"; */
+"V5P-Ug-r7b.text" = "تبوك";
+
+/* Class = "UILabel"; text = "Name"; ObjectID = "VR4-h1-XQ1"; */
+"VR4-h1-XQ1.text" = "اسم";
+
+/* Class = "UITabBarItem"; title = "Item"; ObjectID = "W6D-W6-pSs"; */
+"W6D-W6-pSs.title" = "العنصر";
+
+/* Class = "UITextField"; placeholder = "Fill in the restaurant name"; ObjectID = "WbT-bW-cF6"; */
+"WbT-bW-cF6.placeholder" = "اكتب اسم المطعم";
+
+/* Class = "UILabel"; text = "Type"; ObjectID = "wUK-gq-qM0"; */
+"wUK-gq-qM0.text" = "يكتب";
+
+/* Class = "UILabel"; text = "Phone"; ObjectID = "wXb-61-gdQ"; */
+"wXb-61-gdQ.text" = "هاتف";
+
+/* Class = "UILabel"; text = "Type"; ObjectID = "X0q-yZ-eUK"; */
+"X0q-yZ-eUK.text" = "يكتب";
+
+/* Class = "UILabel"; text = "PHONE"; ObjectID = "xK8-gE-7yy"; */
+"xK8-gE-7yy.text" = "هاتف";
+

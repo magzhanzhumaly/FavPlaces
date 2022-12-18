@@ -16,12 +16,13 @@ class RestaurantViewController: UIViewController {
     
     lazy var dataSource = configureDataSource()
     
-    var restaurants:[Restaurant] = []
+    var restaurants: [Restaurant] = []
     
     var searchController: UISearchController!
     
     var fetchResultController: NSFetchedResultsController<Restaurant>!
 
+    var restaurantImageNames = ["cafedeadend", "homei", "teakha", "cafeloisl", "petiteoyster", "forkee", "posatelier", "palomino", "upstate", "traif", "graham"]
     /*[
         Restaurant(name: "Cafe Deadend", type: "Coffee & Tea Shop", location: "G/F, 72 Po Hing Fong, Sheung Wan, Hong Kong", phone: "232-923423", description: "Searching for great breakfast eateries and coffee? This place is for you. We open at 6:30 every morning, and close at 9 PM. We offer espresso and espresso based drink, such as capuccino, cafe latte, piccolo and many more. Come over and enjoy a great meal.", image: "cafedeadend", isFavorite: false),
         Restaurant(name: "Homei", type: "Cafe", location: "Shop B, G/F, 22-24A Tai Ping San Street SOHO, Sheung Wan, Hong Kong", phone: "348-233423", description: "A little gem hidden at the corner of the street is nothing but fantastic! This place is warm and cozy. We open at 7 every morning except Sunday, and close at 9 PM. We offer a variety of coffee drinks and specialties including lattes, cappuccinos, teas, and more. We serve breakfast, lunch, and dinner in an airy open setting. Come over, have a coffee and enjoy a chit-chat with our baristas.", image: "homei", isFavorite: false),
@@ -91,9 +92,182 @@ class RestaurantViewController: UIViewController {
         
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
-        searchController.searchBar.placeholder = "Search restaurants..."
+        searchController.searchBar.placeholder = String(localized: "Search restaurants...")
         searchController.searchBar.backgroundImage = UIImage()
-        searchController.searchBar.tintColor = UIColor(named: "NavigationBarTitle")
+        searchController.searchBar.tintColor = UIColor(named: "AccentColor")
+        
+        
+        
+        
+        if let appDelegate = (UIApplication.shared.delegate as? AppDelegate) {
+            var restaurant: Restaurant!
+
+            restaurant = Restaurant(context: appDelegate.persistentContainer.viewContext)
+
+            var i = 0
+            restaurant.name = "PALMA"
+            restaurant.type = "Кафе"
+            restaurant.location = "G/F, 72 Po Hing Fong, Sheung Wan, Hong Kong"
+            restaurant.phone = "+7‒707‒258‒03‒66,\n+7‒775‒771‒88‒86"
+            restaurant.summary = "Ресторан под названием \(restaurant.name) по адресу \(restaurant.location)"
+            restaurant.isFavorite = false
+            
+            if let imageData =  UIImage(named: restaurantImageNames[i])!.pngData() {
+                restaurant.image = imageData
+            }
+            i += 1
+            
+            restaurant = Restaurant(context: appDelegate.persistentContainer.viewContext)
+
+            restaurant.name = "БАДЬЯН"
+            restaurant.type = "Кафе"
+            restaurant.location = "проспект Абылай хана, 46"
+            restaurant.phone = "+7‒701‒016‒21‒11"
+            restaurant.summary = "Ресторан под названием \(restaurant.name) по адресу \(restaurant.location)"
+            restaurant.isFavorite = false
+            
+            if let imageData =  UIImage(named: restaurantImageNames[i])!.pngData() {
+                restaurant.image = imageData
+            }
+            i += 1
+            
+            restaurant = Restaurant(context: appDelegate.persistentContainer.viewContext)
+
+            restaurant.name = "HOGO ХОГО"
+            restaurant.type = "Кафе"
+            restaurant.location = "G/F, 72 Po Hing Fong, Sheung Wan, Hong Kong"
+            restaurant.phone = "+7‒707‒382‒78‒17,\n+7‒707‒988‒87‒16"
+            restaurant.summary = "Ресторан под названием \(restaurant.name) по адресу \(restaurant.location)"
+            restaurant.isFavorite = false
+            
+            if let imageData =  UIImage(named: restaurantImageNames[i])!.pngData() {
+                restaurant.image = imageData
+            }
+            i += 1
+
+            restaurant = Restaurant(context: appDelegate.persistentContainer.viewContext)
+
+            restaurant.name = "WUQQA LOUNGE"
+            restaurant.type = "Лаундж"
+            restaurant.location = "улица Толе би, 65"
+            restaurant.phone = "+7‒777‒848‒84‒48"
+            restaurant.summary = "Ресторан под названием \(restaurant.name) по адресу \(restaurant.location)"
+            restaurant.isFavorite = false
+            
+            if let imageData =  UIImage(named: restaurantImageNames[i])!.pngData() {
+                restaurant.image = imageData
+            }
+            i += 1
+
+            
+            restaurant = Restaurant(context: appDelegate.persistentContainer.viewContext)
+
+            restaurant.name = "LIFE GRILL CAFE"
+            restaurant.type = "Кафе"
+            restaurant.location = "улица Жазылбека, 20/2"
+            restaurant.phone = "+7 (727) 390‒12‒12,\n+7‒777‒867‒22‒33"
+            restaurant.summary = "Ресторан под названием \(restaurant.name) по адресу \(restaurant.location)"
+            restaurant.isFavorite = false
+            
+            if let imageData =  UIImage(named: restaurantImageNames[i])!.pngData() {
+                restaurant.image = imageData
+            }
+            i += 1
+
+            
+            restaurant = Restaurant(context: appDelegate.persistentContainer.viewContext)
+
+            restaurant.name = "ЧАЧАПУРИ"
+            restaurant.type = "Кафе"
+            restaurant.location = "улица Кастеева, 15"
+            restaurant.phone = "+7‒701‒016‒21‒11"
+            restaurant.summary = "Ресторан под названием \(restaurant.name) по адресу \(restaurant.location)"
+            restaurant.isFavorite = false
+            
+            if let imageData =  UIImage(named: restaurantImageNames[i])!.pngData() {
+                restaurant.image = imageData
+            }
+            i += 1
+
+            
+            restaurant = Restaurant(context: appDelegate.persistentContainer.viewContext)
+
+            restaurant.name = "МАМА GIVI"
+            restaurant.type = "Ресторан"
+            restaurant.location = "улица Яблочная, 19"
+            restaurant.phone = "+7‒747‒214‒88‒88"
+            restaurant.summary = "Ресторан под названием \(restaurant.name) по адресу \(restaurant.location)"
+            restaurant.isFavorite = false
+            
+            if let imageData =  UIImage(named: restaurantImageNames[i])!.pngData() {
+                restaurant.image = imageData
+            }
+            i += 1
+
+            
+            restaurant = Restaurant(context: appDelegate.persistentContainer.viewContext)
+
+            restaurant.name = "улица Яблочная, 19"
+            restaurant.type = "Таверна"
+            restaurant.location = "улица Розыбакиева, 109"
+            restaurant.phone = "улица Розыбакиева, 109"
+            restaurant.summary = "Ресторан под названием \(restaurant.name) по адресу \(restaurant.location)"
+            restaurant.isFavorite = false
+            
+            if let imageData =  UIImage(named: restaurantImageNames[i])!.pngData() {
+                restaurant.image = imageData
+            }
+            i += 1
+
+            
+            restaurant = Restaurant(context: appDelegate.persistentContainer.viewContext)
+
+            restaurant.name = "ДАДИАНИ"
+            restaurant.type = "Кафе"
+            restaurant.location = "улица Кабанбай батыра, 37"
+            restaurant.phone = "+7‒771‒487‒13‒13,\n+7‒771‒333‒38‒11"
+            restaurant.summary = "Ресторан под названием \(restaurant.name) по адресу \(restaurant.location)"
+            restaurant.isFavorite = false
+            
+            if let imageData =  UIImage(named: restaurantImageNames[i])!.pngData() {
+                restaurant.image = imageData
+            }
+            i += 1
+            /*
+            
+            restaurant = Restaurant(context: appDelegate.persistentContainer.viewContext)
+
+            restaurant.name = "БАДЬЯН"
+            restaurant.type = "asdfas"
+            restaurant.location = "проспект Абылай хана, 46"
+            restaurant.phone = "+7‒701‒016‒21‒11"
+            restaurant.summary = "Ресторан под названием \(restaurant.name) по адресу \(restaurant.location)"
+            restaurant.isFavorite = false
+            
+            if let imageData =  UIImage(named: restaurantImageNames[i])!.pngData() {
+                restaurant.image = imageData
+            }
+            i += 1
+
+            
+            restaurant = Restaurant(context: appDelegate.persistentContainer.viewContext)
+
+            restaurant.name = "БАДЬЯН"
+            restaurant.type = "asdfas"
+            restaurant.location = "проспект Абылай хана, 46"
+            restaurant.phone = "+7‒701‒016‒21‒11"
+            restaurant.summary = "Ресторан под названием \(restaurant.name) по адресу \(restaurant.location)"
+            restaurant.isFavorite = false
+            
+            if let imageData =  UIImage(named: restaurantImageNames[i])!.pngData() {
+                restaurant.image = imageData
+            }
+            i += 1
+
+ */
+            appDelegate.saveContext()
+        }
+        
     }
 
 
@@ -342,7 +516,7 @@ extension RestaurantViewController: UITableViewDelegate {
 
         // Поделиться
         let shareAction = UIContextualAction(style: .normal, title: "Share") { (action, sourceView, completionHandler) in
-            let defaultText = "Just checking in at " + restaurant.name
+            let defaultText = String(localized: "Just checking in at ") + restaurant.name
          
             let activityController: UIActivityViewController
          
@@ -379,88 +553,86 @@ extension RestaurantViewController: UITableViewDelegate {
     }
     
     
-    /*
-    // this
     func tableView(_ tableView: UITableView, contextMenuConfigurationForRowAt indexPath: IndexPath, point: CGPoint) -> UIContextMenuConfiguration? {
-        
-        // Get the selected restaurant
+     
         guard let restaurant = self.dataSource.itemIdentifier(for: indexPath) else {
             return nil
         }
-        
+     
         let configuration = UIContextMenuConfiguration(identifier: indexPath.row as NSCopying, previewProvider: {
-            
+     
             guard let restaurantDetailViewController = self.storyboard?.instantiateViewController(withIdentifier: "RestaurantDetailViewController") as? RestaurantDetailViewController else {
                 return nil
             }
-            
+     
             restaurantDetailViewController.restaurant = restaurant
-            
+     
             return restaurantDetailViewController
-            
+     
         }) { actions in
+
+            let favoriteActionTitle = self.restaurants[indexPath.row].isFavorite ? String(localized: "Remove from favorites") : String(localized: "Save as favorite")
+            let favoriteActionImage = self.restaurants[indexPath.row].isFavorite ? "heart.fill" : "heart"
+    
             
-            let favoriteAction = UIAction(title: "Save as favorite", image: UIImage(systemName: "heart")) { action in
-                
+            let favoriteAction = UIAction(title: favoriteActionTitle, image: UIImage(systemName: favoriteActionImage)) { action in
+     
                 let cell = tableView.cellForRow(at: indexPath) as! RestaurantTableViewCell
                 self.restaurants[indexPath.row].isFavorite.toggle()
                 cell.favoriteImageView.isHidden = !self.restaurants[indexPath.row].isFavorite
             }
-            
+     
             let shareAction = UIAction(title: "Share", image: UIImage(systemName: "square.and.arrow.up")) { action in
-                
+     
                 let defaultText = NSLocalizedString("Just checking in at ", comment: "Just checking in at") + self.restaurants[indexPath.row].name
-                
+     
                 let activityController: UIActivityViewController
-                
+     
                 if let imageToShare = UIImage(data: restaurant.image as Data) {
                     activityController = UIActivityViewController(activityItems: [defaultText, imageToShare], applicationActivities: nil)
                 } else  {
                     activityController = UIActivityViewController(activityItems: [defaultText], applicationActivities: nil)
                 }
-                
+     
                 self.present(activityController, animated: true, completion: nil)
             }
-            
+     
             let deleteAction = UIAction(title: "Delete", image: UIImage(systemName: "trash"), attributes: .destructive) { action in
-                
-                // Delete the row from the data store
+     
                 if let appDelegate = (UIApplication.shared.delegate as? AppDelegate) {
                     let context = appDelegate.persistentContainer.viewContext
                     let restaurantToDelete = self.fetchResultController.object(at: indexPath)
                     context.delete(restaurantToDelete)
-                    
+     
                     appDelegate.saveContext()
                 }
             }
-
-            // Create and return a UIMenu with the share action
+     
             return UIMenu(title: "", children: [favoriteAction, shareAction, deleteAction])
         }
-        
+     
         return configuration
     }
-    // this
+
     func tableView(_ tableView: UITableView, willPerformPreviewActionForMenuWith configuration: UIContextMenuConfiguration, animator: UIContextMenuInteractionCommitAnimating) {
-        
+     
         guard let selectedRow = configuration.identifier as? Int else {
             print("Failed to retrieve the row number")
             return
         }
-        
+     
         guard let restaurantDetailViewController = self.storyboard?.instantiateViewController(withIdentifier: "RestaurantDetailViewController") as? RestaurantDetailViewController else {
-            
+     
             return
         }
-        
+     
         restaurantDetailViewController.restaurant = self.restaurants[selectedRow]
-        
+     
         animator.preferredCommitStyle = .pop
         animator.addCompletion {
             self.show(restaurantDetailViewController, sender: self)
         }
     }
-    */
 
 }
 

@@ -11,7 +11,7 @@ import CoreData
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    let container = NSPersistentContainer(name: "FoodPin")
+//    let container = NSPersistentContainer(name: "Foodster")
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
      
@@ -27,6 +27,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         UINavigationBar.appearance().compactAppearance = navBarAppearance
         UINavigationBar.appearance().scrollEdgeAppearance = navBarAppearance
      
+        
+        let tabBarAppearance = UITabBarAppearance()
+        tabBarAppearance.configureWithOpaqueBackground()
+//        tabBarAppearance.configureWithTransparentBackground()
+
+        UITabBar.appearance().tintColor = UIColor(named: "AccentColor")
+        UITabBar.appearance().standardAppearance = tabBarAppearance
+        
+        
         return true
      
     }
