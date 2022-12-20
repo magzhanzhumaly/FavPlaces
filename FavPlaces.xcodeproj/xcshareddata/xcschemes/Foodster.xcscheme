@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "56BB128F2926B71C00D78051"
-               BuildableName = "Foodster.app"
+               BuildableName = "FavPlaces.app"
                BlueprintName = "Foodster"
-               ReferencedContainer = "container:Foodster.xcodeproj">
+               ReferencedContainer = "container:FavPlaces.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -36,7 +36,7 @@
                BlueprintIdentifier = "56BB12A52926B71D00D78051"
                BuildableName = "FoodsterTests.xctest"
                BlueprintName = "FoodsterTests"
-               ReferencedContainer = "container:Foodster.xcodeproj">
+               ReferencedContainer = "container:FavPlaces.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -47,7 +47,7 @@
                BlueprintIdentifier = "56BB12AF2926B71D00D78051"
                BuildableName = "FoodsterUITests.xctest"
                BlueprintName = "FoodsterUITests"
-               ReferencedContainer = "container:Foodster.xcodeproj">
+               ReferencedContainer = "container:FavPlaces.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -67,9 +67,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "56BB128F2926B71C00D78051"
-            BuildableName = "Foodster.app"
+            BuildableName = "FavPlaces.app"
             BlueprintName = "Foodster"
-            ReferencedContainer = "container:Foodster.xcodeproj">
+            ReferencedContainer = "container:FavPlaces.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -84,9 +84,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "56BB128F2926B71C00D78051"
-            BuildableName = "Foodster.app"
+            BuildableName = "FavPlaces.app"
             BlueprintName = "Foodster"
-            ReferencedContainer = "container:Foodster.xcodeproj">
+            ReferencedContainer = "container:FavPlaces.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

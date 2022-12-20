@@ -16,6 +16,8 @@
 		5636D28A293F8BC600907F90 /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5636D289293F8BC600907F90 /* WalkthroughContentViewController.swift */; };
 		5636D28C293F8D5700907F90 /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5636D28B293F8D5700907F90 /* WalkthroughPageViewController.swift */; };
 		5636D28E293F8F8600907F90 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5636D28D293F8F8600907F90 /* WalkthroughViewController.swift */; };
+		563F022B294F72C100D6A467 /* 2gis_by_search_csv.csv in Resources */ = {isa = PBXBuildFile; fileRef = 563F022A294F72C100D6A467 /* 2gis_by_search_csv.csv */; };
+		563F022D294F72F300D6A467 /* DataFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563F022C294F72F300D6A467 /* DataFactory.swift */; };
 		5645E04E2942400000E40950 /* AboutTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5645E04D2942400000E40950 /* AboutTableViewController.swift */; };
 		5645E050294243AB00E40950 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5645E04F294243AB00E40950 /* Discover.storyboard */; };
 		5645E053294243BA00E40950 /* About.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5645E051294243BA00E40950 /* About.storyboard */; };
@@ -72,6 +74,8 @@
 		5636D289293F8BC600907F90 /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
 		5636D28B293F8D5700907F90 /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
 		5636D28D293F8F8600907F90 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
+		563F022A294F72C100D6A467 /* 2gis_by_search_csv.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2gis_by_search_csv.csv; sourceTree = "<group>"; };
+		563F022C294F72F300D6A467 /* DataFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataFactory.swift; sourceTree = "<group>"; };
 		5645E04D2942400000E40950 /* AboutTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTableViewController.swift; sourceTree = "<group>"; };
 		5645E04F294243AB00E40950 /* Discover.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
 		5645E052294243BA00E40950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Foodster/Storyboard/Base.lproj/About.storyboard; sourceTree = "<group>"; };
@@ -95,7 +99,7 @@
 		569250A1293570B400949B85 /* RestaurantDetailMapCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDetailMapCell.swift; sourceTree = "<group>"; };
 		569250A72935786000949B85 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		569250AC293579E400949B85 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		56BB12902926B71C00D78051 /* Foodster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodster.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56BB12902926B71C00D78051 /* FavPlaces.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FavPlaces.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56BB12932926B71C00D78051 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56BB12952926B71C00D78051 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		56BB129A2926B71C00D78051 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -207,9 +211,9 @@
 		56BB12872926B71C00D78051 = {
 			isa = PBXGroup;
 			children = (
-				56BB12922926B71C00D78051 /* Foodster */,
-				56BB12A92926B71D00D78051 /* FoodsterTests */,
-				56BB12B32926B71D00D78051 /* FoodsterUITests */,
+				56BB12922926B71C00D78051 /* FavPlaces */,
+				56BB12A92926B71D00D78051 /* FavPlacesTests */,
+				56BB12B32926B71D00D78051 /* FavPlacesUITests */,
 				56BB12912926B71C00D78051 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -217,14 +221,14 @@
 		56BB12912926B71C00D78051 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				56BB12902926B71C00D78051 /* Foodster.app */,
+				56BB12902926B71C00D78051 /* FavPlaces.app */,
 				56BB12A62926B71D00D78051 /* FoodsterTests.xctest */,
 				56BB12B02926B71D00D78051 /* FoodsterUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		56BB12922926B71C00D78051 /* Foodster */ = {
+		56BB12922926B71C00D78051 /* FavPlaces */ = {
 			isa = PBXGroup;
 			children = (
 				5692509A293568E800949B85 /* Extensions */,
@@ -239,25 +243,26 @@
 				56546E34293907BB00A33303 /* Foodster.xcdatamodeld */,
 				56BB12A12926B71D00D78051 /* Info.plist */,
 				5645E05929427E5700E40950 /* Localizable.strings */,
+				563F022A294F72C100D6A467 /* 2gis_by_search_csv.csv */,
 			);
-			path = Foodster;
+			path = FavPlaces;
 			sourceTree = "<group>";
 		};
-		56BB12A92926B71D00D78051 /* FoodsterTests */ = {
+		56BB12A92926B71D00D78051 /* FavPlacesTests */ = {
 			isa = PBXGroup;
 			children = (
 				56BB12AA2926B71D00D78051 /* FoodsterTests.swift */,
 			);
-			path = FoodsterTests;
+			path = FavPlacesTests;
 			sourceTree = "<group>";
 		};
-		56BB12B32926B71D00D78051 /* FoodsterUITests */ = {
+		56BB12B32926B71D00D78051 /* FavPlacesUITests */ = {
 			isa = PBXGroup;
 			children = (
 				56BB12B42926B71D00D78051 /* FoodsterUITests.swift */,
 				56BB12B62926B71D00D78051 /* FoodsterUITestsLaunchTests.swift */,
 			);
-			path = FoodsterUITests;
+			path = FavPlacesUITests;
 			sourceTree = "<group>";
 		};
 		56BB12C5292A8CD100D78051 /* Model */ = {
@@ -265,6 +270,7 @@
 			children = (
 				5663A905292FBB40001437D8 /* Restaraunt.swift */,
 				5663A907292FBCA4001437D8 /* RestaurantDiffableDataSource.swift */,
+				563F022C294F72F300D6A467 /* DataFactory.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -286,7 +292,7 @@
 			);
 			name = Foodster;
 			productName = Foodster;
-			productReference = 56BB12902926B71C00D78051 /* Foodster.app */;
+			productReference = 56BB12902926B71C00D78051 /* FavPlaces.app */;
 			productType = "com.apple.product-type.application";
 		};
 		56BB12A52926B71D00D78051 /* FoodsterTests */ = {
@@ -348,7 +354,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 56BB128B2926B71C00D78051 /* Build configuration list for PBXProject "Foodster" */;
+			buildConfigurationList = 56BB128B2926B71C00D78051 /* Build configuration list for PBXProject "FavPlaces" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -381,6 +387,7 @@
 				5645E05B29427E5700E40950 /* Localizable.strings in Resources */,
 				5645E05C294280BF00E40950 /* Onboarding.storyboard in Resources */,
 				56014A762934019E00C94282 /* Nunito-Bold.ttf in Resources */,
+				563F022B294F72C100D6A467 /* 2gis_by_search_csv.csv in Resources */,
 				5645E050294243AB00E40950 /* Discover.storyboard in Resources */,
 				56BB129B2926B71C00D78051 /* Main.storyboard in Resources */,
 			);
@@ -428,6 +435,7 @@
 				5663A908292FBCA4001437D8 /* RestaurantDiffableDataSource.swift in Sources */,
 				56014A702933E0D700C94282 /* RestaurantDetailViewController.swift in Sources */,
 				56014A79293405F900C94282 /* RestaurantDetailHeaderView.swift in Sources */,
+				563F022D294F72F300D6A467 /* DataFactory.swift in Sources */,
 				56BB12962926B71C00D78051 /* SceneDelegate.swift in Sources */,
 				569250A82935786000949B85 /* MapViewController.swift in Sources */,
 				5636D28E293F8F8600907F90 /* WalkthroughViewController.swift in Sources */,
@@ -640,7 +648,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D3C4YVDR4G;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Foodster/Info.plist;
+				INFOPLIST_FILE = FavPlaces/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -651,8 +659,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.magzhanzhumaly.Foodster;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.magzhanzhumaly.FavPlaces;
+				PRODUCT_NAME = FavPlaces;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -668,7 +676,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = D3C4YVDR4G;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Foodster/Info.plist;
+				INFOPLIST_FILE = FavPlaces/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -679,8 +687,8 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.magzhanzhumaly.Foodster;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.magzhanzhumaly.FavPlaces;
+				PRODUCT_NAME = FavPlaces;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -697,12 +705,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.magzhanzhumaly.FoodsterTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.magzhanzhumaly.FavPlacesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Foodster.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Foodster";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FavPlaces.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FavPlaces";
 			};
 			name = Debug;
 		};
@@ -716,12 +724,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.magzhanzhumaly.FoodsterTests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.magzhanzhumaly.FavPlacesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Foodster.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Foodster";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FavPlaces.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/FavPlaces";
 			};
 			name = Release;
 		};
@@ -733,12 +741,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.magzhanzhumaly.FoodsterUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.magzhanzhumaly.FavPlacesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Foodster;
+				TEST_TARGET_NAME = FavPlaces;
 			};
 			name = Debug;
 		};
@@ -750,19 +758,19 @@
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.magzhanzhumaly.FoodsterUITests;
+				PRODUCT_BUNDLE_IDENTIFIER = com.magzhanzhumaly.FavPlacesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = Foodster;
+				TEST_TARGET_NAME = FavPlaces;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		56BB128B2926B71C00D78051 /* Build configuration list for PBXProject "Foodster" */ = {
+		56BB128B2926B71C00D78051 /* Build configuration list for PBXProject "FavPlaces" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				56BB12B82926B71D00D78051 /* Debug */,

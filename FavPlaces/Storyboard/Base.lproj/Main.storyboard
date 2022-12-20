@@ -13,7 +13,7 @@
         <!--Foodster-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="RestaurantViewController" customModule="Foodster" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="RestaurantViewController" customModule="FavPlaces" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="datacell" rowHeight="140" id="mi3-4Q-dNR" customClass="RestaurantTableViewCell" customModule="Foodster" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="datacell" rowHeight="140" id="mi3-4Q-dNR" customClass="RestaurantTableViewCell" customModule="FavPlaces" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="390" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mi3-4Q-dNR" id="koS-dm-FRS">
@@ -94,7 +94,7 @@
                                             <segue destination="uoi-yD-nQl" kind="show" identifier="showRestaurantDetail" id="67K-hO-lWS"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="favoritecell" rowHeight="316" id="BhL-Q2-7TN" customClass="RestaurantTableViewCell" customModule="Foodster" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="favoritecell" rowHeight="316" id="BhL-Q2-7TN" customClass="RestaurantTableViewCell" customModule="FavPlaces" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="190" width="390" height="316"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="BhL-Q2-7TN" id="6Lh-YW-HXX">
@@ -232,7 +232,7 @@
         <!--Restaurant Detail View Controller-->
         <scene sceneID="kDI-zJ-G3j">
             <objects>
-                <viewController storyboardIdentifier="RestaurantDetailViewController" hidesBottomBarWhenPushed="YES" id="uoi-yD-nQl" customClass="RestaurantDetailViewController" customModule="Foodster" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RestaurantDetailViewController" hidesBottomBarWhenPushed="YES" id="uoi-yD-nQl" customClass="RestaurantDetailViewController" customModule="FavPlaces" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V3l-mv-I9B">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -240,7 +240,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="YGb-En-xVc">
                                 <rect key="frame" x="0.0" y="0.0" width="390" height="1200"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <view key="tableHeaderView" contentMode="scaleToFill" id="fjc-of-7Ys" userLabel="Header View" customClass="RestaurantDetailHeaderView" customModule="Foodster" customModuleProvider="target">
+                                <view key="tableHeaderView" contentMode="scaleToFill" id="fjc-of-7Ys" userLabel="Header View" customClass="RestaurantDetailHeaderView" customModule="FavPlaces" customModuleProvider="target">
                                     <rect key="frame" x="0.0" y="0.0" width="390" height="445"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
@@ -305,31 +305,47 @@
                                     </connections>
                                 </view>
                                 <view key="tableFooterView" contentMode="scaleToFill" id="A12-7X-UtN">
-                                    <rect key="frame" x="0.0" y="874.99999618530273" width="390" height="90"/>
+                                    <rect key="frame" x="0.0" y="874.99999618530273" width="390" height="180"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0h-5x-6eQ">
-                                            <rect key="frame" x="20" y="20" width="350" height="50"/>
-                                            <color key="tintColor" name="AccentColor"/>
-                                            <state key="normal" title="Button"/>
-                                            <buttonConfiguration key="configuration" style="filled" title="Rate it">
-                                                <backgroundConfiguration key="background" cornerRadius="25"/>
-                                            </buttonConfiguration>
-                                            <connections>
-                                                <segue destination="ol8-kL-0Vq" kind="presentation" identifier="showReview" modalPresentationStyle="fullScreen" id="OJ3-G9-MSd"/>
-                                            </connections>
-                                        </button>
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0jY-tS-sdt">
+                                            <rect key="frame" x="18" y="18" width="354" height="144"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0h-5x-6eQ">
+                                                    <rect key="frame" x="0.0" y="0.0" width="354" height="62"/>
+                                                    <color key="tintColor" systemColor="systemGray2Color"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="filled" title="Rate it">
+                                                        <backgroundConfiguration key="background" cornerRadius="25"/>
+                                                    </buttonConfiguration>
+                                                    <connections>
+                                                        <segue destination="ol8-kL-0Vq" kind="presentation" identifier="showReview" modalPresentationStyle="fullScreen" id="OJ3-G9-MSd"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GJ2-Va-5ST">
+                                                    <rect key="frame" x="0.0" y="82" width="354" height="62"/>
+                                                    <color key="tintColor" name="AccentColor"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="filled" title="Book">
+                                                        <backgroundConfiguration key="background" cornerRadius="25"/>
+                                                    </buttonConfiguration>
+                                                    <connections>
+                                                        <action selector="bookButtonTapped:" destination="uoi-yD-nQl" eventType="touchUpInside" id="I9D-l6-SE8"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                        </stackView>
                                     </subviews>
                                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                     <constraints>
-                                        <constraint firstItem="N0h-5x-6eQ" firstAttribute="top" secondItem="A12-7X-UtN" secondAttribute="top" constant="20" id="4VL-oC-LDN"/>
-                                        <constraint firstItem="N0h-5x-6eQ" firstAttribute="leading" secondItem="A12-7X-UtN" secondAttribute="leading" constant="20" id="9yU-My-uGW"/>
-                                        <constraint firstAttribute="bottom" secondItem="N0h-5x-6eQ" secondAttribute="bottom" constant="20" id="ceV-oB-uuw"/>
-                                        <constraint firstAttribute="trailing" secondItem="N0h-5x-6eQ" secondAttribute="trailing" constant="20" id="luk-wu-bzy"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="0jY-tS-sdt" secondAttribute="trailing" constant="10" id="Pie-Em-aNa"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="0jY-tS-sdt" secondAttribute="bottom" constant="10" id="QJB-Og-JvL"/>
+                                        <constraint firstItem="0jY-tS-sdt" firstAttribute="leading" secondItem="A12-7X-UtN" secondAttribute="leadingMargin" constant="10" id="SrT-k2-34Y"/>
+                                        <constraint firstItem="0jY-tS-sdt" firstAttribute="top" secondItem="A12-7X-UtN" secondAttribute="topMargin" constant="10" id="TCK-8l-zMd"/>
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RestaurantDetailTextCell" id="XLd-lG-Wv8" userLabel="RestaurantDetailTextCell" customClass="RestaurantDetailTextCell" customModule="Foodster" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RestaurantDetailTextCell" id="XLd-lG-Wv8" userLabel="RestaurantDetailTextCell" customClass="RestaurantDetailTextCell" customModule="FavPlaces" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="495" width="390" height="42.666667938232422"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="XLd-lG-Wv8" id="qCG-9y-hjM">
@@ -354,7 +370,7 @@
                                             <outlet property="descriptionLabel" destination="gNS-Px-QOe" id="CJs-vm-U1O"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RestaurantDetailTwoColumnCell" id="e6H-Lv-0W9" userLabel="RestaurantDetailTwoColumnCell" customClass="RestaurantDetailTwoColumnCell" customModule="Foodster" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RestaurantDetailTwoColumnCell" id="e6H-Lv-0W9" userLabel="RestaurantDetailTwoColumnCell" customClass="RestaurantDetailTwoColumnCell" customModule="FavPlaces" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="537.66666793823242" width="390" height="69"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="e6H-Lv-0W9" id="pp3-uU-pBL">
@@ -415,7 +431,7 @@
                                             <outlet property="column2TitleLabel" destination="xK8-gE-7yy" id="hUN-6T-k2t"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RestaurantDetailMapCell" id="3kC-cK-TT7" customClass="RestaurantDetailMapCell" customModule="Foodster" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="RestaurantDetailMapCell" id="3kC-cK-TT7" customClass="RestaurantDetailMapCell" customModule="FavPlaces" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="606.66666793823242" width="390" height="240.33332824707031"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3kC-cK-TT7" id="3mV-Oi-DeT">
@@ -484,7 +500,7 @@
         <!--Review View Controller-->
         <scene sceneID="fhY-DT-sS7">
             <objects>
-                <viewController id="ol8-kL-0Vq" customClass="ReviewViewController" customModule="Foodster" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ol8-kL-0Vq" customClass="ReviewViewController" customModule="FavPlaces" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="B3t-Aw-IYb">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -591,7 +607,7 @@
         <!--New Restaurant-->
         <scene sceneID="1e4-CB-n96">
             <objects>
-                <tableViewController id="ilk-Ma-W1n" customClass="NewRestaurantController" customModule="Foodster" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="ilk-Ma-W1n" customClass="NewRestaurantController" customModule="FavPlaces" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="ode-fZ-L1w">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -636,7 +652,7 @@
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fill in the restaurant name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WbT-bW-cF6" customClass="RoundedTextField" customModule="Foodster" customModuleProvider="target">
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fill in the restaurant name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WbT-bW-cF6" customClass="RoundedTextField" customModule="FavPlaces" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="25.333333333333339" width="350" height="32.666666666666657"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                             <textInputTraits key="textInputTraits"/>
@@ -668,7 +684,7 @@
                                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fill in the restaurant name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GqM-J6-3so" customClass="RoundedTextField" customModule="Foodster" customModuleProvider="target">
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fill in the restaurant name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GqM-J6-3so" customClass="RoundedTextField" customModule="FavPlaces" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="25.333333333333339" width="350" height="32.666666666666657"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                             <textInputTraits key="textInputTraits"/>
@@ -700,7 +716,7 @@
                                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fill in the restaurant name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cJX-No-Pa5" customClass="RoundedTextField" customModule="Foodster" customModuleProvider="target">
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fill in the restaurant name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cJX-No-Pa5" customClass="RoundedTextField" customModule="FavPlaces" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="25.333333333333339" width="350" height="32.666666666666657"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                             <textInputTraits key="textInputTraits"/>
@@ -732,7 +748,7 @@
                                                             <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fill in the restaurant name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dnd-gM-C2z" customClass="RoundedTextField" customModule="Foodster" customModuleProvider="target">
+                                                        <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" ambiguous="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Fill in the restaurant name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dnd-gM-C2z" customClass="RoundedTextField" customModule="FavPlaces" customModuleProvider="target">
                                                             <rect key="frame" x="0.0" y="25.333333333333339" width="350" height="32.666666666666657"/>
                                                             <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                             <textInputTraits key="textInputTraits"/>
@@ -821,7 +837,7 @@
         <!--Map View Controller-->
         <scene sceneID="jU2-fO-lZH">
             <objects>
-                <viewController id="Ojd-DX-WGQ" customClass="MapViewController" customModule="Foodster" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Ojd-DX-WGQ" customClass="MapViewController" customModule="FavPlaces" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="euQ-H3-3jQ">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -852,7 +868,7 @@
         <!--Favorites-->
         <scene sceneID="NbC-1C-rUv">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WNG-6e-yl6" customClass="NavigationController" customModule="Foodster" customModuleProvider="target" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WNG-6e-yl6" customClass="NavigationController" customModule="FavPlaces" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Favorites" image="heart.fill" catalog="system" id="FqZ-c7-6Kg"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ACl-rw-Svd">
@@ -949,6 +965,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGray6Color">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

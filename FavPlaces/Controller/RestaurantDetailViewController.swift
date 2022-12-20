@@ -58,6 +58,16 @@ class RestaurantDetailViewController: UIViewController {
         }
     }
     
+    
+    
+    @IBAction func bookButtonTapped(_ sender: Any) {
+        print("book")
+    }
+    
+    
+    
+    
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
      

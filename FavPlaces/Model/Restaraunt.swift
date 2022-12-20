@@ -24,6 +24,19 @@ public class Restaurant: NSManagedObject {
     
 }
 
+func loadCSV(from csvName: String) -> [Restaurant] {
+    var csvToStruct = [Restaurant]()
+    
+    // locate the csv file
+    guard let filePath = Bundle.main.path(forResource: csvName, ofType: "csv") else {
+        return []
+    }
+    
+    // convert hte contents of the file to into one very long string
+    
+    return csvToStruct
+}
+
 //public class Restaurant: NSManagedObject {
 //    @nonobjc public class func fetchRequest() -> NSFetchRequest<Restaurant> {
 //        return NSFetchRequest<Restaurant>(entityName: "Restaurant")
