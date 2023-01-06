@@ -1,6 +1,6 @@
 //
 //  ReviewViewController.swift
-//  Foodster
+//  FavPlaces
 //
 //  Created by Magzhan Zhumaly on 29.11.2022.
 //
@@ -11,6 +11,7 @@ class ReviewViewController: UIViewController {
     
     @IBOutlet var backgroundImageView: UIImageView!
     @IBOutlet var rateButtons: [UIButton]!
+//            @IBOutlet var awesomeButton: UIButton!
     
     var restaurant = Restaurant()
     
@@ -18,7 +19,25 @@ class ReviewViewController: UIViewController {
         super.viewDidLoad()
         backgroundImageView.image = UIImage(data: restaurant.image)
         
+//        rateButtons[0]. setImage(UIImage(named: "love"), for: .normal)
+//        rateButtons[0].setImage(UIImage(named: "love"), for: .highlighted)
+
+//        rateButtons[0].
+//        ?.image = UIImage(nasmed: "angry")
         
+//        self.setImage(UIImage(named: iconName), for: .normal)
+//           self.setImage(UIImage(named: iconName), for: .highlighted)
+//           let imageWidth = self.imageView!.frame.width
+//           let textWidth = (title as NSString).size(attributes:[NSFontAttributeName:self.titleLabel!.font!]).width
+//           let width = textWidth + imageWidth + 24
+//           //24 - the sum of your insets from left and right
+//           widthConstraints.constant = width
+//           self.layoutIfNeeded()
+
+        
+        
+//        rateButtons[0].imageView?.
+//        awesomeButton.imageView?.frame        = CGRect(x: 20, y: 50, width: view.frame.width - 40, height: 100)
         // Добавление эффекта размытия
         let blurEffect = UIBlurEffect(style: .dark)
         let blurEffectView = UIVisualEffectView(effect: blurEffect)

@@ -1,6 +1,6 @@
 //
 //  WebViewController.swift
-//  Foodster
+//  FavPlaces
 //
 //  Created by Magzhan Zhumaly on 08.12.2022.
 //

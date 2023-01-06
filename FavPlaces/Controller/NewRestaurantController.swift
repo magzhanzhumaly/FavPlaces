@@ -1,6 +1,6 @@
 //
 //  NewRestaurantController.swift
-//  Foodster
+//  FavPlaces
 //
 //  Created by Magzhan Zhumaly on 30.11.2022.
 //
@@ -90,10 +90,12 @@ class NewRestaurantController: UITableViewController {
                 restaurant.name = nameTextField.text!
                 restaurant.type = typeTextField.text!
                 restaurant.location = addressTextField.text!
-                restaurant.phone = phoneTextField.text!
+                restaurant.phones = phoneTextField.text!
                 restaurant.summary = descriptionTextView.text
                 restaurant.isFavorite = false
-             
+                restaurant.city = "almaty"
+                restaurant.url = "nil"
+
                 if let imageData = photoImageView.image?.pngData() {
                     restaurant.image = imageData
                 }

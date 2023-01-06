@@ -1,6 +1,6 @@
 //
 //  RestarauntTableViewCell.swift
-//  Foodster
+//  FavPlaces
 //
 //  Created by Magzhan Zhumaly on 20.11.2022.
 //

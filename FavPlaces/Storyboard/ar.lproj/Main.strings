@@ -37,8 +37,8 @@
 /* Class = "UITextField"; placeholder = "Fill in the restaurant name"; ObjectID = "cJX-No-Pa5"; */
 "cJX-No-Pa5.placeholder" = "اكتب اسم المطعم";
 
-/* Class = "UINavigationItem"; title = "Foodster"; ObjectID = "Dkg-Je-CbI"; */
-"Dkg-Je-CbI.title" = "Foodster";
+/* Class = "UINavigationItem"; title = "FavPlaces"; ObjectID = "Dkg-Je-CbI"; */
+"Dkg-Je-CbI.title" = "FavPlaces";
 
 /* Class = "UITextField"; placeholder = "Fill in the restaurant name"; ObjectID = "dnd-gM-C2z"; */
 "dnd-gM-C2z.placeholder" = "اكتب اسم المطعم";

@@ -32,8 +32,8 @@
 /* Class = "UILabel"; text = "Type"; ObjectID = "ByT-ze-5pn"; */
 "ByT-ze-5pn.text" = "Type";
 
-/* Class = "UINavigationItem"; title = "Foodster"; ObjectID = "Dkg-Je-CbI"; */
-"Dkg-Je-CbI.title" = "Foodster";
+/* Class = "UINavigationItem"; title = "FavPlaces"; ObjectID = "Dkg-Je-CbI"; */
+"Dkg-Je-CbI.title" = "FavPlaces";
 
 /* Class = "UILabel"; text = "ADDRESS"; ObjectID = "F18-aV-BUA"; */
 "F18-aV-BUA.text" = "ADDRESS";

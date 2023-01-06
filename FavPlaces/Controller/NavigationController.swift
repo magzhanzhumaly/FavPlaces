@@ -1,6 +1,6 @@
 //
 //  NavigationController.swift
-//  Foodster
+//  FavPlaces
 //
 //  Created by Magzhan Zhumaly on 29.11.2022.
 //

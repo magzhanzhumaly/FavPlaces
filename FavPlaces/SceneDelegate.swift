@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  Foodster
+//  FavPlaces
 //
 //  Created by Magzhan Zhumaly on 17.11.2022.
 //

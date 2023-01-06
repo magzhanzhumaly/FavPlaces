@@ -24,10 +24,15 @@
 		5645E0552942483500E40950 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5645E0542942483500E40950 /* WebViewController.swift */; };
 		5645E05B29427E5700E40950 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5645E05929427E5700E40950 /* Localizable.strings */; };
 		5645E05C294280BF00E40950 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5645E05E294280BF00E40950 /* Onboarding.storyboard */; };
-		56546E36293907BB00A33303 /* Foodster.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56546E34293907BB00A33303 /* Foodster.xcdatamodeld */; };
+		564EB75E2958D8F2007152F2 /* FavRestaurantsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 564EB75D2958D8F2007152F2 /* FavRestaurantsViewController.swift */; };
+		564FC35A296624B6009B3429 /* gpxgenerator_path.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 564FC359296624B6009B3429 /* gpxgenerator_path.gpx */; };
+		564FC36129663A00009B3429 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 564FC35F29663A00009B3429 /* InfoPlist.strings */; };
+		56546E36293907BB00A33303 /* FavPlaces.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 56546E34293907BB00A33303 /* FavPlaces.xcdatamodeld */; };
 		5663A904292FBB1D001437D8 /* RestaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5663A903292FBB1D001437D8 /* RestaurantViewController.swift */; };
 		5663A906292FBB40001437D8 /* Restaraunt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5663A905292FBB40001437D8 /* Restaraunt.swift */; };
 		5663A908292FBCA4001437D8 /* RestaurantDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5663A907292FBCA4001437D8 /* RestaurantDiffableDataSource.swift */; };
+		566C978429546799003055D4 /* 2gis_by_search_csv_save.csv in Resources */ = {isa = PBXBuildFile; fileRef = 566C978329546799003055D4 /* 2gis_by_search_csv_save.csv */; };
+		566C978C295482AB003055D4 /* checkec.csv in Resources */ = {isa = PBXBuildFile; fileRef = 566C978B295482AB003055D4 /* checkec.csv */; };
 		567ED597293643DD008012D9 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567ED596293643DD008012D9 /* ReviewViewController.swift */; };
 		567ED5992936A742008012D9 /* RoundedTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567ED5982936A742008012D9 /* RoundedTextField.swift */; };
 		567ED59B2936BA90008012D9 /* NewRestaurantController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 567ED59A2936BA90008012D9 /* NewRestaurantController.swift */; };
@@ -45,6 +50,7 @@
 		56BB12B52926B71D00D78051 /* FoodsterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BB12B42926B71D00D78051 /* FoodsterUITests.swift */; };
 		56BB12B72926B71D00D78051 /* FoodsterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BB12B62926B71D00D78051 /* FoodsterUITestsLaunchTests.swift */; };
 		56BB12C7292A8CF100D78051 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56BB12C6292A8CF100D78051 /* RestaurantTableViewCell.swift */; };
+		56BCBAAD296713D500137ED2 /* almaty.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 56BCBAAC296713D500137ED2 /* almaty.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,10 +93,20 @@
 		5645E05D294280BF00E40950 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Onboarding.storyboard; sourceTree = "<group>"; };
 		5645E062294280C700E40950 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Onboarding.strings; sourceTree = "<group>"; };
 		5645E0642942845100E40950 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		564EB75D2958D8F2007152F2 /* FavRestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavRestaurantsViewController.swift; sourceTree = "<group>"; };
+		564FC359296624B6009B3429 /* gpxgenerator_path.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = gpxgenerator_path.gpx; sourceTree = "<group>"; };
+		564FC35B29663586009B3429 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = Foodster/Storyboard/ru.lproj/About.strings; sourceTree = "<group>"; };
+		564FC35C29663586009B3429 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		564FC35D29663586009B3429 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		564FC35E29663586009B3429 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Onboarding.strings; sourceTree = "<group>"; };
+		564FC36029663A00009B3429 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		564FC36229663A00009B3429 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		56546E35293907BB00A33303 /* Foodster.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Foodster.xcdatamodel; sourceTree = "<group>"; };
 		5663A903292FBB1D001437D8 /* RestaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantViewController.swift; sourceTree = "<group>"; };
 		5663A905292FBB40001437D8 /* Restaraunt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Restaraunt.swift; sourceTree = "<group>"; };
 		5663A907292FBCA4001437D8 /* RestaurantDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantDiffableDataSource.swift; sourceTree = "<group>"; };
+		566C978329546799003055D4 /* 2gis_by_search_csv_save.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = 2gis_by_search_csv_save.csv; sourceTree = "<group>"; };
+		566C978B295482AB003055D4 /* checkec.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = checkec.csv; sourceTree = "<group>"; };
 		567ED596293643DD008012D9 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		567ED5982936A742008012D9 /* RoundedTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextField.swift; sourceTree = "<group>"; };
 		567ED59A2936BA90008012D9 /* NewRestaurantController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRestaurantController.swift; sourceTree = "<group>"; };
@@ -112,6 +128,7 @@
 		56BB12B42926B71D00D78051 /* FoodsterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsterUITests.swift; sourceTree = "<group>"; };
 		56BB12B62926B71D00D78051 /* FoodsterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoodsterUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		56BB12C6292A8CF100D78051 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
+		56BCBAAC296713D500137ED2 /* almaty.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = almaty.gpx; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,13 +206,14 @@
 				56014A6F2933E0D700C94282 /* RestaurantDetailViewController.swift */,
 				5692509F29356B7F00949B85 /* NavigationController.swift */,
 				569250A72935786000949B85 /* MapViewController.swift */,
-				567ED596293643DD008012D9 /* ReviewViewController.swift */,
 				567ED59A2936BA90008012D9 /* NewRestaurantController.swift */,
+				567ED596293643DD008012D9 /* ReviewViewController.swift */,
 				5636D289293F8BC600907F90 /* WalkthroughContentViewController.swift */,
 				5636D28B293F8D5700907F90 /* WalkthroughPageViewController.swift */,
 				5636D28D293F8F8600907F90 /* WalkthroughViewController.swift */,
 				5645E04D2942400000E40950 /* AboutTableViewController.swift */,
 				5645E0542942483500E40950 /* WebViewController.swift */,
+				564EB75D2958D8F2007152F2 /* FavRestaurantsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -240,10 +258,15 @@
 				56BB12932926B71C00D78051 /* AppDelegate.swift */,
 				56BB12952926B71C00D78051 /* SceneDelegate.swift */,
 				56BB129C2926B71D00D78051 /* Assets.xcassets */,
-				56546E34293907BB00A33303 /* Foodster.xcdatamodeld */,
+				56546E34293907BB00A33303 /* FavPlaces.xcdatamodeld */,
 				56BB12A12926B71D00D78051 /* Info.plist */,
+				564FC35F29663A00009B3429 /* InfoPlist.strings */,
 				5645E05929427E5700E40950 /* Localizable.strings */,
 				563F022A294F72C100D6A467 /* 2gis_by_search_csv.csv */,
+				566C978329546799003055D4 /* 2gis_by_search_csv_save.csv */,
+				566C978B295482AB003055D4 /* checkec.csv */,
+				564FC359296624B6009B3429 /* gpxgenerator_path.gpx */,
+				56BCBAAC296713D500137ED2 /* almaty.gpx */,
 			);
 			path = FavPlaces;
 			sourceTree = "<group>";
@@ -362,6 +385,7 @@
 				en,
 				Base,
 				ar,
+				ru,
 			);
 			mainGroup = 56BB12872926B71C00D78051;
 			productRefGroup = 56BB12912926B71C00D78051 /* Products */;
@@ -380,15 +404,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				566C978429546799003055D4 /* 2gis_by_search_csv_save.csv in Resources */,
+				564FC36129663A00009B3429 /* InfoPlist.strings in Resources */,
 				56014A772934019E00C94282 /* Nunito-Regular.ttf in Resources */,
 				56BB12A02926B71D00D78051 /* LaunchScreen.storyboard in Resources */,
+				56BCBAAD296713D500137ED2 /* almaty.gpx in Resources */,
 				5645E053294243BA00E40950 /* About.storyboard in Resources */,
 				56BB129D2926B71D00D78051 /* Assets.xcassets in Resources */,
+				564FC35A296624B6009B3429 /* gpxgenerator_path.gpx in Resources */,
 				5645E05B29427E5700E40950 /* Localizable.strings in Resources */,
 				5645E05C294280BF00E40950 /* Onboarding.storyboard in Resources */,
 				56014A762934019E00C94282 /* Nunito-Bold.ttf in Resources */,
 				563F022B294F72C100D6A467 /* 2gis_by_search_csv.csv in Resources */,
 				5645E050294243AB00E40950 /* Discover.storyboard in Resources */,
+				566C978C295482AB003055D4 /* checkec.csv in Resources */,
 				56BB129B2926B71C00D78051 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,7 +454,7 @@
 				5663A904292FBB1D001437D8 /* RestaurantViewController.swift in Sources */,
 				5692509C293568F800949B85 /* UIColor+Ext.swift in Sources */,
 				567ED59B2936BA90008012D9 /* NewRestaurantController.swift in Sources */,
-				56546E36293907BB00A33303 /* Foodster.xcdatamodeld in Sources */,
+				56546E36293907BB00A33303 /* FavPlaces.xcdatamodeld in Sources */,
 				567ED597293643DD008012D9 /* ReviewViewController.swift in Sources */,
 				5645E04E2942400000E40950 /* AboutTableViewController.swift in Sources */,
 				56014A7D29341B6B00C94282 /* RestaurantDetailTwoColumnCell.swift in Sources */,
@@ -439,6 +468,7 @@
 				56BB12962926B71C00D78051 /* SceneDelegate.swift in Sources */,
 				569250A82935786000949B85 /* MapViewController.swift in Sources */,
 				5636D28E293F8F8600907F90 /* WalkthroughViewController.swift in Sources */,
+				564EB75E2958D8F2007152F2 /* FavRestaurantsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +510,7 @@
 			children = (
 				5645E052294243BA00E40950 /* Base */,
 				5645E05629427C7200E40950 /* ar */,
+				564FC35B29663586009B3429 /* ru */,
 			);
 			name = About.storyboard;
 			sourceTree = "<group>";
@@ -488,6 +519,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				5645E05A29427E5700E40950 /* ar */,
+				564FC36229663A00009B3429 /* ru */,
 			);
 			name = Localizable.strings;
 			sourceTree = "<group>";
@@ -497,8 +529,17 @@
 			children = (
 				5645E05D294280BF00E40950 /* Base */,
 				5645E062294280C700E40950 /* ar */,
+				564FC35E29663586009B3429 /* ru */,
 			);
 			name = Onboarding.storyboard;
+			sourceTree = "<group>";
+		};
+		564FC35F29663A00009B3429 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				564FC36029663A00009B3429 /* ru */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		56BB12992926B71C00D78051 /* Main.storyboard */ = {
@@ -507,6 +548,7 @@
 				56BB129A2926B71C00D78051 /* Base */,
 				5645E05829427C7200E40950 /* ar */,
 				5645E0642942845100E40950 /* en */,
+				564FC35D29663586009B3429 /* ru */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -516,6 +558,7 @@
 			children = (
 				56BB129F2926B71D00D78051 /* Base */,
 				5645E05729427C7200E40950 /* ar */,
+				564FC35C29663586009B3429 /* ru */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -809,13 +852,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		56546E34293907BB00A33303 /* Foodster.xcdatamodeld */ = {
+		56546E34293907BB00A33303 /* FavPlaces.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
 				56546E35293907BB00A33303 /* Foodster.xcdatamodel */,
 			);
 			currentVersion = 56546E35293907BB00A33303 /* Foodster.xcdatamodel */;
-			path = Foodster.xcdatamodeld;
+			path = FavPlaces.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

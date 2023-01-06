@@ -1,6 +1,6 @@
 //
 //  WalkthroughPageViewController.swift
-//  Foodster
+//  FavPlaces
 //
 //  Created by Magzhan Zhumaly on 06.12.2022.
 //

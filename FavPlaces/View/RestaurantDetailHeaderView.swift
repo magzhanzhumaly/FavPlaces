@@ -1,6 +1,6 @@
 //
 //  RestaurantDetailHeaderView.swift
-//  Foodster
+//  FavPlaces
 //
 //  Created by Magzhan Zhumaly on 27.11.2022.
 //

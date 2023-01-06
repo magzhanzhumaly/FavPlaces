@@ -1,6 +1,6 @@
 //
 //  RestaurantDetailTwoColumnCell.swift
-//  Foodster
+//  FavPlaces
 //
 //  Created by Magzhan Zhumaly on 28.11.2022.
 //

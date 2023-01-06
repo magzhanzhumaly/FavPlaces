@@ -1,0 +1,9 @@
+/* Privacy - Camera Usage Description */
+"NSCameraUsageDescription" = "Дайте приложению доступ к камере, чтобы делать фотки";
+
+/* Privacy - Location When In Use Usage Description */
+"NSLocationWhenInUseUsageDescription" = "Дайте приложению доступ к вашей геолокации, чтобы вы могли построить маршрут до пункта назначения";
+
+/* Privacy - Photo Library Usage Description */
+"NSPhotoLibraryUsageDescription" = "Дайте приложению доступ к вашей галерее, чтобы вы могли использовать фото из галереи, для добавления нового кафе";
+

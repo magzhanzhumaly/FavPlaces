@@ -1,0 +1,8 @@
+/* Bundle name */
+"CFBundleName" = "FavPlaces";
+/* Privacy - Camera Usage Description */
+"NSCameraUsageDescription" = "You need to grant the app permission to use your camera, to make photos";
+/* Privacy - Location When In Use Usage Description */
+"NSLocationWhenInUseUsageDescription" = "You need to grant the app permission to track your location, to be able to get direction to the dining place";
+/* Privacy - Photo Library Usage Description */
+"NSPhotoLibraryUsageDescription" = "You need to grant the app permission to use your photo library, to use photos";

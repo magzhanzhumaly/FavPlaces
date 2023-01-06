@@ -1,0 +1,9 @@
+/* Class = "UILabel"; text = "Title"; ObjectID = "qse-Wk-FvR"; */
+"qse-Wk-FvR.text" = "Название";
+
+/* Class = "UINavigationItem"; title = "About"; ObjectID = "TzY-mP-EWN"; */
+"TzY-mP-EWN.title" = "О ресторане";
+
+/* Class = "UINavigationController"; title = "Discover"; ObjectID = "Zcu-hu-dho"; */
+"Zcu-hu-dho.title" = "Находите новое";
+

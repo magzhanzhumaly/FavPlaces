@@ -1,14 +1,14 @@
 //
-//  FoodsterTests.swift
+//  FavPlacesTests.swift
 //  FoodsterTests
 //
 //  Created by Magzhan Zhumaly on 17.11.2022.
 //
 
 import XCTest
-@testable import Foodster
+@testable import FavPlaces
 
-final class FoodsterTests: XCTestCase {
+final class FavPlacesTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

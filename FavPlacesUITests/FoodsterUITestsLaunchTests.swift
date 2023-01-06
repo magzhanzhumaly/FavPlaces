@@ -1,13 +1,13 @@
 //
-//  FoodsterUITestsLaunchTests.swift
-//  FoodsterUITests
+//  FavPlacesUITestsLaunchTests.swift
+//  FavPlacesUITests
 //
 //  Created by Magzhan Zhumaly on 17.11.2022.
 //
 
 import XCTest
 
-final class FoodsterUITestsLaunchTests: XCTestCase {
+final class FavPlacesUITestsLaunchTests: XCTestCase {
 
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true

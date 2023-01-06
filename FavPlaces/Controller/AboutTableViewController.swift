@@ -1,6 +1,6 @@
 //
 //  AboutTableViewController.swift
-//  Foodster
+//  FavPlaces
 //
 //  Created by Magzhan Zhumaly on 08.12.2022.
 //
@@ -32,7 +32,7 @@ class AboutTableViewController: UITableViewController {
     var sectionContent = [ [LinkItem(text: String(localized: "Rate us on App Store", comment: "Rate us on App Store"), link: "https://www.apple.com/ios/app-store/", image: "store"),
                             LinkItem(text: String(localized: "Tell us your feedback", comment: "Tell us your feedback"), link: "https://github.com/magzhanzhumaly", image: "chat")
                             ],
-                           [LinkItem(text: String(localized: "Twitter"), link: "https://twitter.com/MagzhanZhumaly", image: "twitter"),
+                           [LinkItem(text: String(localized: "Telegram"), link: "https://t.me/+rPnAfuNw4V9mZWYy", image: "telegram"),
                             LinkItem(text: String(localized: "Facebook"), link: "https://facebook.com/zhumalymagzhan", image: "facebook"),
                             LinkItem(text: String(localized: "Instagram"), link: "https:/www.instagram.com/magzhanzhumaly", image: "instagram")]
                             ]
@@ -118,7 +118,6 @@ class AboutTableViewController: UITableViewController {
 
     // SFSafariViewController
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-     
         switch indexPath.section {
         case 0: openWithSafariViewController(indexPath: indexPath)
 //            performSegue(withIdentifier: "showWebView", sender: self)
@@ -127,7 +126,7 @@ class AboutTableViewController: UITableViewController {
      
         default: break
         }
-     
+        
         tableView.deselectRow(at: indexPath, animated: false)
     }
 
@@ -144,7 +143,6 @@ class AboutTableViewController: UITableViewController {
 
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     
         if segue.identifier == "showWebView" {
             if let destinationController = segue.destination as? WebViewController,
                let indexPath = tableView.indexPathForSelectedRow,
